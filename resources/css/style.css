@@ -1,0 +1,135 @@
+html {
+	font-size: 18px;
+}
+
+body {
+	line-height: 1.4;
+	font-family: Helvetica;
+}
+
+.main {
+	width: 960px;
+}
+
+.flex {
+	display: flex;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.navigation {
+	color: white;
+}
+
+/* Header */
+
+header {
+	height: 30rem;
+	background-image: url(../imgs/glasses-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	
+}
+
+.navigation {
+	background-color: cadetblue;
+	margin: 1rem 0 10rem 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	padding-left: 2rem;
+	height: 1.5rem;
+	width: auto;
+}
+
+.company {
+	padding: 1rem;
+	margin-right: auto;
+}
+
+nav span {
+	padding: 1rem 2rem;
+}
+
+.headline {
+	width: 1032px;
+	justify-content: flex-end;
+}
+
+.headline h1 {
+	background-color: white;
+	padding: 1.5rem 5rem;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+/* Main Content */
+
+.maincontent {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Features */
+
+.features {
+	justify-content: center;
+	align-self: center;
+}
+
+.feature {
+	height: 8rem;
+	margin: 3rem 3rem;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.feature.portrait img {
+	width: 3.5rem;
+	height: auto;
+}
+
+.feature.landscape img {
+	width: 5rem;
+	height: auto;
+}
+
+/* Infos and Appointments */
+
+.infos {
+	align-self: center;
+	justify-content: center;
+}
+
+.info {
+	width: 35%;
+}
+
+.info.phil {
+	margin-right: 5%;
+}
+
+.info h2 {
+	background-color: cadetblue;
+	color: white;
+	font-weight: bold;
+	padding: 0.5rem 0 0.5rem 1.25rem;
+	width: 10rem;
+	margin-bottom: 1rem;
+}
+
+
+
+
