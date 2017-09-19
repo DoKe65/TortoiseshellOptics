@@ -50,6 +50,10 @@ header {
 	align-items: center;
 }
 
+.smallscreen {
+  display: none;
+}
+
 .logo img {
 	padding-left: 2rem;
 	height: 1.5rem;
@@ -82,19 +86,20 @@ nav span {
 .maincontent {
 	justify-content: center;
 	flex-wrap: wrap;
-  margin-bottom: 5rem;
 }
 
 /* Features */
 
 .features {
 	justify-content: center;
+  align-items: center;
 	align-self: center;
 }
 
 .feature {
 	height: 8rem;
 	margin: 3rem 3rem;
+  width: 5rem;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
@@ -115,6 +120,7 @@ nav span {
 .infos {
 	align-self: center;
 	justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .info {
@@ -140,7 +146,7 @@ footer {
   background-color: azure;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 footer img {
@@ -148,18 +154,26 @@ footer img {
   margin: 4rem 1rem 4rem 4rem;
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 996px), (max-width: 738px) {
+
+  .main, .headline, footer {
+    width: 100%;
+  }
+
+  .maincontent {
+    margin: 0;
+  }
+
+}
+
 /* Media Query for middle-screens */
 
 @media only screen and (max-width: 996px) {
 
-  .main,
-  .headline,
-  footer {
-    width: 100%;
-  }
-
   header {
-  height: 22rem;
+    height: 22rem;
   }
 
   .navigation {
@@ -171,10 +185,98 @@ footer img {
     font-size: 1.33rem;
     margin-right: 2rem;
   }
-
 }
 
+/* Media Query for small screens */
 
+@media only screen and (max-width: 738px) {
+
+  .smallscreen {
+    display: inline-block;
+  }
+  
+  .navigation .smallscreen {
+    margin-right: 2rem;
+  }
+
+  nav, .company {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .navigation {
+    margin: 0 0 9rem 0;
+  }
+
+  .smallscreen {
+  padding: 1rem;
+  margin-left: auto;
+}
+
+  .headline h1 {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .feature div,
+  .info p {
+    font-size: 0.77rem;
+  }
+
+  .features {
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+
+  .feature {
+    height: auto;
+    margin: 1.54rem;
+    justify-content: center;
+  }
+
+  .feature div {
+    padding-top: 1.2rem;
+  }
+
+  .infos {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .info h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .info p {
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: 4rem 0;
+  }
+}
 
 
 
